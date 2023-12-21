@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirection Page</title>
+</head>
+<body>
+
+  <p>This page will redirect you in 5 seconds...</p>
+
+  <script type="text/javascript">
+    // Function to redirect after a specified time
+    function redirect() {
+      // Replace 'destination_url' with the URL you want to redirect to
+      var destination_url = 'https://www.javatpoint.com/java-stringjoiner'; // Change this URL
+
+      // Redirect after 5 seconds (5000 milliseconds)
+      setTimeout(function() {
+        window.location.href = destination_url;
+      }, 1000); // Change the time in milliseconds (e.g., 5000 for 5 seconds)
+    }
+
+    // Call the redirect function when the page loads
+    window.onload = redirect;
+  </script>
+
+</body>
+</html>
